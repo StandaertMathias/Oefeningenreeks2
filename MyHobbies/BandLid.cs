@@ -4,11 +4,11 @@ using System.Text;
 
 namespace MyHobbies
 {
-    enum Geslacht{
+    public enum Geslacht{
         Man, 
         Vrouw
     }
-    class BandLid
+    public class BandLid
     {
         public string Naam { get; set; }
         public int Leeftijd { get; set; }

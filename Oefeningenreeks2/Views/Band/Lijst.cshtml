@@ -1,0 +1,31 @@
+﻿@using MyHobbies
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lijst</title>
+</head>
+<body>
+    <h1>Overzicht bands</h1>
+    @{
+        foreach (Band band in ViewBag.bands)
+        {
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>@band.Naam</th>
+                </tr>
+                <tr>
+                    <td>Jaar</td>
+                    <td>@band.Jaar</td>
+                </tr>
+            </table>
+        }
+    }
+</body>
+</html>
